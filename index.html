@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="webpageDT.mp4" type="video/mp4">
+      </video>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm">
+            <label for="program">Program</label>
+            <input type="text" id="program" name="program" required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="usn">USN</label>
+            <input type="text" id="usn" name="usn" required>
+
+            <label for="semester">Semester</label>
+            <input type="text" id="semester" name="semester" required>
+
+            <label for="contact">Contact No.</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">e-Mail Id</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <!-- Updated courses dropdown -->
+            <div class="courses-dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown()">Select Courses</div>
+                <div class="dropdown-list">
+                    <label><input type="checkbox" name="courses" value="21HS71 Management and Entrepreneurship"> 21HS71 Management and Entrepreneurship</label>
+                    <label><input type="checkbox" name="courses" value="21CG72 Data Science and Data Analytics"> 21CG72 Data Science and Data Analytics</label>
+                    <label><input type="checkbox" name="courses" value="21CG731 Professional Elective Course-II - Cyber Security and Data Privacy"> 21CG731 Professional Elective Course-II - Cyber Security and Data Privacy</label>
+                    <label><input type="checkbox" name="courses" value="21CG741 Professional Elective Course-III"> 21CG741 Professional Elective Course-III</label>
+                    <label><input type="checkbox" name="courses" value="21CG65x Open Elective Course-II"> 21CG65x Open Elective Course-II</label>
+                    <label><input type="checkbox" name="courses" value="1CGP76 Project Work"> 1CGP76 Project Work</label>
+                </div>
+            </div>
+
+            <label for="signature">Upload Signature</label>
+            <input type="file" id="signature" name="signature" accept="image/*" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height:1050px
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure video stays in the background */
+    /* opacity: 0.5; Reduce opacity to make the form more visible */
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.6); /* Set a slightly transparent background */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 1119PX;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; /* Ensure background color of inputs is white */
+    color: #000; /* Ensure input text is dark */
+    border-color: #000;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.courses-dropdown {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dropdown-header {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.dropdown-header:hover {
+    background-color: #ddd;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 4px;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+.dropdown-list label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-list label:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+#signature{
+    display: flex;
+    margin-top: -39px;
+    margin-left: 170px;
+}
